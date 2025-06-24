@@ -2,7 +2,7 @@
     "name": "@purinton/modify",
     "type": "module",
     "version": "1.0.0",
-    "description": "A modern Discord app built with Node.js, based on the purinton/discord foundation.",
+    "description": "A modern, modular Discord moderation and utility bot with OpenAI-powered content moderation, multi-language support, and easy customization.",
     "main": "modify.mjs",
     "scripts": {
         "start": "node modify.mjs",
@@ -13,8 +13,19 @@
         "url": "git+https://github.com/purinton/modify.git"
     },
     "keywords": [
-        "modify",
-        "nodejs"
+        "discord",
+        "discord-bot",
+        "moderation",
+        "openai",
+        "ai-moderation",
+        "localization",
+        "multi-language",
+        "nodejs",
+        "bot",
+        "purinton",
+        "utility",
+        "commands",
+        "events"
     ],
     "author": "Russell Purinton <russell@purinton.us>",
     "license": "MIT",

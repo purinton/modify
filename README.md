@@ -2,7 +2,7 @@
 
 ## @purinton/modify [![npm version](https://img.shields.io/npm/v/@purinton/modify.svg)](https://www.npmjs.com/package/@purinton/modify)[![license](https://img.shields.io/github/license/purinton/modify.svg)](LICENSE)[![build status](https://github.com/purinton/modify/actions/workflows/nodejs.yml/badge.svg)](https://github.com/purinton/modify/actions)
 
-A modern Discord app built with Node.js, based on the [@purinton/discord](https://github.com/purinton/discord) foundation.
+A modern Discord moderation and utility bot built with Node.js, based on the [@purinton/discord](https://github.com/purinton/discord) foundation. It provides advanced moderation using OpenAI, multi-language support, and a modular command/event system for easy customization.
 
 ---
 
@@ -23,13 +23,16 @@ A modern Discord app built with Node.js, based on the [@purinton/discord](https:
 
 ## Features
 
-- Discord.js-based app with ESM support
-- Command and event handler architecture
-- Multi-language/localized responses
-- Environment variable support via dotenv
+- Discord.js-based app with ESM support (native ES modules)
+- Modular command and event handler architecture for easy extension
+- Multi-language/localized responses with JSON locale files
+- AI-powered moderation using OpenAI's moderation API (text and image support)
+- Environment variable support via dotenv for secure configuration
 - Logging and signal handling via `@purinton/common`
 - Ready for deployment with systemd or Docker
-- Jest for testing
+- Jest for unit and integration testing
+- Database support for log channels and localization (MySQL)
+- Easy to add or modify commands, events, and languages
 
 ## Getting Started
 
@@ -42,9 +45,7 @@ A modern Discord app built with Node.js, based on the [@purinton/discord](https:
    ```
 
 2. **Set up your environment:**
-   - Copy `.env.example` to `.env` and fill in your Discord app token and other secrets.
-   - Edit `package.json` (name, description, author, etc.)
-   - Update this `README.md` as needed.
+   - Copy `.env.example` to `.env` and fill in your Discord app token, OpenAI key, and database credentials.
 
 3. **Start the app locally:**
 
@@ -57,7 +58,33 @@ A modern Discord app built with Node.js, based on the [@purinton/discord](https:
 ## Configuration
 
 - All configuration is handled via environment variables in the `.env` file.
+- Required variables include your Discord bot token, OpenAI API key, and MySQL database connection info.
 - See `.env.example` for required and optional variables.
+- **Before running the bot, you must create the required database table.**
+
+### Database Setup
+
+The bot requires a MySQL table named `log_channels` for logging moderation events and storing guild locales. This table is not created automatically.
+
+To create the table, import the provided `schema.sql` file into your MySQL database:
+
+```bash
+mysql -u <username> -p <database> < schema.sql
+```
+
+Replace `<username>` and `<database>` with your MySQL username and database name. You will be prompted for your password.
+
+The `schema.sql` file contains:
+
+```sql
+DROP TABLE IF EXISTS `log_channels`;
+CREATE TABLE `log_channels` (
+  `guild_id` varchar(32) NOT NULL,
+  `channel_id` varchar(32) NOT NULL,
+  `guild_locale` varchar(12) NOT NULL,
+  PRIMARY KEY (`guild_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+```
 
 ## Running as a Service (systemd)
 
@@ -92,16 +119,19 @@ A modern Discord app built with Node.js, based on the [@purinton/discord](https:
 
 - Add new commands in the `commands/` directory.
 - Each command has a `.json` definition (for Discord registration/localization) and a `.mjs` handler (for logic).
+- Example: To add a new moderation command, create `commands/yourcommand.json` and `commands/yourcommand.mjs`.
 
 ### Events
 
 - Add or modify event handlers in the `events/` directory.
 - Each Discord event (e.g., `ready`, `messageCreate`, `interactionCreate`) has its own handler file.
+- You can add support for new Discord Gateway events by adding a new handler file.
 
 ### Locales
 
 - Add or update language files in the `locales/` directory.
 - Localize command names, descriptions, and app responses.
+- All locale files must match the keys in `en-US.json` for consistency.
 
 ## Testing
 
@@ -112,6 +142,7 @@ A modern Discord app built with Node.js, based on the [@purinton/discord](https:
   ```
 
 - Add your tests in the `tests/` folder or alongside your code.
+- Jest is configured for ESM and will automatically find `.test.mjs` files.
 
 ## Support
 
