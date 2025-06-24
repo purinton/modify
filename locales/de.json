@@ -1,3 +1,27 @@
 {
-    "help": "Dies ist der Hilfetext."
+    "help": "🤖 **Modifizieren Hilfe Leitfaden**\n\nModifizieren ist hier, um deinen Discord-Server sicher zu halten! So kannst du anfangen:\n\n🔗 **Support-Server:** [Tritt dem Modifizieren Support-Server bei](https://discord.gg/vYuTwaZ999)\n\n🔑 **Befehl: /log_channel**\nVerwende diesen Befehl, um einen Kanal festzulegen, in dem Modifizieren Warnungen für Nachrichten sendet, die als Hassrede, Bedrohungen, Belästigung, Selbstverletzung, sexuelle Inhalte oder Gewalt eingestuft werden.\n\n**Einrichten deines Log-Kanals:**\n1. Erstelle einen neuen Kanal (oder wähle einen bestehenden) für Modifizieren-Warnungen.\n2. Stelle sicher, dass Modifizieren die Berechtigung hat, dort Nachrichten zu senden.\n3. Gib ` /log_channel ` im festgelegten Kanal ein, um ihn als deinen Log-Kanal festzulegen.\n\n✨ Das war's! Modifizieren wird jetzt Benachrichtigungen an deinen Log-Kanal senden, wenn eine Nachricht markiert wird. Denk daran, dass du 'Server verwalten'-Berechtigungen benötigst, um den Log-Kanal festzulegen.\n\n🚀 *Zukünftige Pläne:*\n- Benutzerdefinierte Schwellenwerte für Inhaltskategorien.\n- Maßgeschneiderte Richtlinien für verschiedene Kanäle und Rollen.\n- Bestrafungsrichtlinien für wiederholte Verstöße.\n\nBleib dran für Updates!\n\nBrauchst du mehr Hilfe? **Danke, dass du Modifizieren verwendest! Lass uns gemeinsam eine sichere Gemeinschaft schaffen.**\n\n🧹 **Befehl: /purge**\nVerwende diesen Befehl, um Nachrichten in einem Kanal massenhaft zu löschen. Du kannst die Anzahl der zu löschenden Nachrichten (1-100) angeben, nach Inhalt, Benutzer, Nachrichten von Apps oder Nachrichten mit Embeds filtern.\n\n**So verwendest du /purge:**\n- `/purge amount:<number>` — Lösche bis zu 100 kürzlich gesendete Nachrichten.\n- Optional: Füge Filter wie `contains:<text>`, `user:<user>`, `apps:true` oder `embeds:true` hinzu, um gezielt bestimmte Nachrichten anzusprechen.\n- Du benötigst die Berechtigung 'Nachrichten verwalten', um diesen Befehl zu verwenden.\n",
+    "log_channel_confirm": "Log-Kanal auf gesetzt",
+    "log_channel_admin_only": "Es tut mir leid, aber dieser Befehl ist nur für Administratoren.",
+    "log_channel_error": "Es tut mir leid, aber etwas ist schiefgelaufen. Bitte versuche es später erneut.",
+    "categories": {
+        "sexual": "Sexuell",
+        "sexual/minors": "Sexuell/Minoren",
+        "harassment": "Belästigung",
+        "harassment/threatening": "Belästigung/Bedrohung",
+        "hate": "Hass",
+        "hate/threatening": "Hass/Bedrohung",
+        "illicit": "Illegale",
+        "illicit/violent": "Illegale/Gewalttätig",
+        "self-harm": "Selbstverletzung",
+        "self-harm/intent": "Selbstverletzung/Absicht",
+        "self-harm/instructions": "Selbstverletzung/Anleitungen",
+        "violence": "Gewalt",
+        "violence/graphic": "Gewalt/Grafisch"
+    },
+    "purge_app_permission_missing": "App hat nicht die Berechtigung, Nachrichten zu verwalten.",
+    "purge_user_permission_missing": "Benutzer hat nicht die Berechtigung, Nachrichten zu verwalten.",
+    "purge_invalid_amount": "Ungültige Löschmenge. Muss zwischen 1 und 100 liegen.",
+    "purge_no_messages": "Keine Nachrichten zum Löschen.",
+    "purge_success": "Gelöschte Nachrichten: ",
+    "evaluate_error": "Keine Nachrichten oder Bilder zur Bewertung."
 }

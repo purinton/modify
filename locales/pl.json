@@ -1,3 +1,27 @@
 {
-    "help": "To jest tekst pomocy."
+    "help": "🤖 **Przewodnik Pomocy**\n\nModify jest tutaj, aby zapewnić bezpieczeństwo Twojego serwera Discord! Oto jak zacząć:\n\n🔗 **Serwer wsparcia:** [Dołącz do serwera wsparcia Modify](https://discord.gg/vYuTwaZ999)\n\n🔑 **Komenda: /log_channel**\nUżyj tej komendy, aby wyznaczyć kanał, w którym Modify będzie wysyłać powiadomienia o wiadomościach oznaczonych jako zawierające mowę nienawiści, groźby, nękanie, samookaleczenia, treści seksualne lub przemoc.\n\n**Ustawienie kanału logów:**\n1. Utwórz nowy kanał (lub wybierz istniejący) do powiadomień Modify.\n2. Upewnij się, że Modify ma uprawnienia do wysyłania wiadomości w tym kanale.\n3. Wprowadź `/log_channel` w wyznaczonym kanale, aby ustawić go jako kanał logów.\n\n✨ To wszystko! Modify teraz będzie wysyłać powiadomienia do Twojego kanału logów, jeśli wiadomość zostanie oznaczona. Pamiętaj, że potrzebujesz uprawnień 'zarządzaj serwerem', aby ustawić kanał logów.\n\n🚀 *Plany na przyszłość:*\n- Niestandardowe poziomy progowe dla kategorii treści.\n- Dostosowane zasady dla różnych kanałów i ról.\n- Polityki kar za powtarzające się naruszenia.\n\nBądź na bieżąco z aktualizacjami!\n\nPotrzebujesz więcej pomocy? **Dziękujemy za korzystanie z Modify! Stwórzmy razem bezpieczną społeczność.**\n\n🧹 **Komenda: /purge**\nUżyj tej komendy, aby masowo usunąć wiadomości w kanale. Możesz określić liczbę wiadomości do usunięcia (1-100), filtrować według treści, użytkownika, wiadomości z aplikacji lub wiadomości zawierających osadzone treści.\n\n**Jak używać /purge:**\n- `/purge amount:<number>` — Usuń do 100 ostatnich wiadomości.\n- Opcjonalnie: Dodaj filtry, takie jak `contains:<text>`, `user:<user>`, `apps:true` lub `embeds:true`, aby celować w konkretne wiadomości.\n- Potrzebujesz uprawnień 'zarządzaj wiadomościami', aby użyć tej komendy.\n",
+    "log_channel_confirm": "Kanał logów ustawiony na",
+    "log_channel_admin_only": "Przykro mi, ale ta komenda jest tylko dla administratorów.",
+    "log_channel_error": "Przykro mi, ale coś poszło nie tak z naszej strony. Proszę spróbować ponownie później.",
+    "categories": {
+        "sexual": "Seksualne",
+        "sexual/minors": "Seksualne/Nieletni",
+        "harassment": "Nękanie",
+        "harassment/threatening": "Nękanie/Groźby",
+        "hate": "Nienawiść",
+        "hate/threatening": "Nienawiść/Groźby",
+        "illicit": "Nielegalne",
+        "illicit/violent": "Nielegalne/Przemoc",
+        "self-harm": "Samookaleczenie",
+        "self-harm/intent": "Samookaleczenie/Intencja",
+        "self-harm/instructions": "Samookaleczenie/Instrukcje",
+        "violence": "Przemoc",
+        "violence/graphic": "Przemoc/Graficzne"
+    },
+    "purge_app_permission_missing": "Aplikacja nie ma uprawnienia do zarządzania wiadomościami.",
+    "purge_user_permission_missing": "Użytkownik nie ma uprawnienia do zarządzania wiadomościami.",
+    "purge_invalid_amount": "Nieprawidłowa ilość do usunięcia. Musi być między 1 a 100.",
+    "purge_no_messages": "Brak wiadomości do usunięcia.",
+    "purge_success": "Usunięto wiadomości: ",
+    "evaluate_error": "Brak wiadomości lub obrazów do oceny."
 }

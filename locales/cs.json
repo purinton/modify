@@ -1,3 +1,27 @@
 {
-    "help": "Ez a súgószöveg."
+    "help": "🤖 **Nápověda pro Modify**\n\nModify je zde, aby udržel váš Discord server v bezpečí! Zde je návod, jak začít:\n\n🔗 **Podpora:** [Připojte se k podpoře Modify](https://discord.gg/vYuTwaZ999)\n\n🔑 **Příkaz: /log_channel**\nPoužijte tento příkaz k určení kanálu, kam Modify bude posílat upozornění na zprávy označené jako obsahující nenávistné projevy, hrozby, obtěžování, sebepoškozování, sexuální obsah nebo násilí.\n\n**Nastavení vašeho log kanálu:**\n1. Vytvořte nový kanál (nebo vyberte existující) pro upozornění Modify.\n2. Ujistěte se, že Modify má oprávnění tam posílat zprávy.\n3. Zadejte `/log_channel` do určeného kanálu, abyste ho nastavili jako váš log kanál.\n\n✨ To je vše! Modify nyní bude posílat upozornění do vašeho log kanálu, pokud bude zpráva označena. Nezapomeňte, že potřebujete oprávnění 'spravovat server', abyste mohli nastavit log kanál.\n\n🚀 *Plány do budoucna:*\n- Vlastní prahové úrovně pro kategorie obsahu.\n- Přizpůsobené politiky pro různé kanály a role.\n- Politiky trestání za opakované porušení.\n\nSledujte novinky!\n\nPotřebujete další pomoc? **Děkujeme, že používáte Modify! Vytvořme společně bezpečné společenství.**\n\n🧹 **Příkaz: /purge**\nPoužijte tento příkaz k hromadnému odstranění zpráv v kanálu. Můžete specifikovat počet zpráv k odstranění (1-100), filtrovat podle obsahu, uživatele, zpráv z aplikací nebo zpráv obsahujících embedy.\n\n**Jak používat /purge:**\n- `/purge amount:<number>` — Odstraňte až 100 nedávných zpráv.\n- Volitelně: Přidejte filtry jako `contains:<text>`, `user:<user>`, `apps:true` nebo `embeds:true`, abyste cíli konkrétní zprávy.\n- Potřebujete oprávnění 'spravovat zprávy', abyste mohli použít tento příkaz.\n",
+    "log_channel_confirm": "Log kanál nastaven na",
+    "log_channel_admin_only": "Omlouvám se, ale tento příkaz je pouze pro administrátory.",
+    "log_channel_error": "Omlouvám se, ale něco se pokazilo na naší straně. Zkuste to prosím znovu později.",
+    "categories": {
+        "sexual": "Sexuální",
+        "sexual/minors": "Sexuální/Maloletníci",
+        "harassment": "Obtěžování",
+        "harassment/threatening": "Obtěžování/Hrozby",
+        "hate": "Nenávist",
+        "hate/threatening": "Nenávist/Hrozby",
+        "illicit": "Nelegální",
+        "illicit/violent": "Nelegální/Násilné",
+        "self-harm": "Sebepoškozování",
+        "self-harm/intent": "Sebepoškozování/Úmysl",
+        "self-harm/instructions": "Sebepoškozování/Pokyny",
+        "violence": "Násilí",
+        "violence/graphic": "Násilí/Grafické"
+    },
+    "purge_app_permission_missing": "Aplikaci chybí oprávnění spravovat zprávy.",
+    "purge_user_permission_missing": "Uživateli chybí oprávnění spravovat zprávy.",
+    "purge_invalid_amount": "Neplatné množství pro vyčištění. Musí být mezi 1 a 100.",
+    "purge_no_messages": "Žádné zprávy k odstranění.",
+    "purge_success": "Odstraněné zprávy: ",
+    "evaluate_error": "Žádné zprávy nebo obrázky k vyhodnocení."
 }

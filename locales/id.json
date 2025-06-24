@@ -1,3 +1,27 @@
 {
-    "help": "Ini adalah teks bantuan."
+    "help": "🤖 **Panduan Bantuan Modifikasi**\n\nModifikasi ada untuk menjaga server Discord Anda tetap aman! Berikut cara memulainya:\n\n🔗 **Server Dukungan:** [Bergabunglah dengan Server Dukungan Modifikasi](https://discord.gg/vYuTwaZ999)\n\n🔑 **Perintah: /log_channel**\nGunakan perintah ini untuk menetapkan saluran di mana Modifikasi akan mengirimkan pemberitahuan untuk pesan yang ditandai karena mengandung ujaran kebencian, ancaman, pelecehan, diri sendiri, konten seksual, atau kekerasan.\n\n**Menyiapkan Saluran Log Anda:**\n1. Buat saluran baru (atau pilih yang sudah ada) untuk pemberitahuan Modifikasi.\n2. Pastikan Modifikasi memiliki izin untuk mengirim pesan di sana.\n3. Masukkan `/log_channel` di saluran yang ditentukan untuk mengatur sebagai saluran log Anda.\n\n✨ Itu saja! Modifikasi sekarang akan mengirimkan pemberitahuan ke saluran log Anda jika ada pesan yang ditandai. Ingat, Anda memerlukan izin 'kelola server' untuk mengatur saluran log.\n\n🚀 *Rencana Masa Depan:*\n- Tingkat ambang kustom untuk kategori konten.\n- Kebijakan yang disesuaikan untuk saluran dan peran yang berbeda.\n- Kebijakan hukuman untuk pelanggaran berulang.\n\nTetap disini untuk pembaruan!\n\nButuh bantuan lebih lanjut? **Terima kasih telah menggunakan Modifikasi! Mari kita ciptakan komunitas yang aman bersama.**\n\n🧹 **Perintah: /purge**\nGunakan perintah ini untuk menghapus pesan secara massal di saluran. Anda dapat menentukan jumlah pesan yang akan dihapus (1-100), menyaring berdasarkan konten, pengguna, pesan dari aplikasi, atau pesan yang mengandung embed.\n\n**Cara Menggunakan /purge:**\n- `/purge amount:<number>` — Hapus hingga 100 pesan terbaru.\n- Opsional: Tambahkan filter seperti `contains:<text>`, `user:<user>`, `apps:true`, atau `embeds:true` untuk menargetkan pesan tertentu.\n- Anda memerlukan izin 'kelola pesan' untuk menggunakan perintah ini.\n",
+    "log_channel_confirm": "Saluran log diatur ke",
+    "log_channel_admin_only": "Maaf, tetapi perintah ini hanya untuk administrator.",
+    "log_channel_error": "Maaf, tetapi ada yang salah di pihak kami. Silakan coba lagi nanti.",
+    "categories": {
+        "sexual": "Seksual",
+        "sexual/minors": "Seksual/Anak di Bawah Umur",
+        "harassment": "Pelecehan",
+        "harassment/threatening": "Pelecehan/Ancaman",
+        "hate": "Kebencian",
+        "hate/threatening": "Kebencian/Ancaman",
+        "illicit": "Ilegal",
+        "illicit/violent": "Ilegal/Kekerasan",
+        "self-harm": "Diri Sendiri",
+        "self-harm/intent": "Diri Sendiri/Niat",
+        "self-harm/instructions": "Diri Sendiri/Petunjuk",
+        "violence": "Kekerasan",
+        "violence/graphic": "Kekerasan/Grafis"
+    },
+    "purge_app_permission_missing": "Aplikasi tidak memiliki izin untuk mengelola pesan.",
+    "purge_user_permission_missing": "Pengguna tidak memiliki izin untuk mengelola pesan.",
+    "purge_invalid_amount": "Jumlah penghapusan tidak valid. Harus antara 1 dan 100.",
+    "purge_no_messages": "Tidak ada pesan untuk dihapus.",
+    "purge_success": "Pesan yang dihapus: ",
+    "evaluate_error": "Tidak ada pesan atau gambar untuk dievaluasi."
 }

@@ -1,3 +1,27 @@
 {
-    "help": "Tai yra pagalbos tekstas."
+    "help": "🤖 **Modify Pagalbos Gidas**\n\nModify yra čia, kad jūsų Discord serveris būtų saugus! Štai kaip pradėti:\n\n🔗 **Pagalbos Serveris:** [Prisijunkite prie Modify Pagalbos Serverio](https://discord.gg/vYuTwaZ999)\n\n🔑 **Komanda: /log_channel**\nNaudokite šią komandą, kad nustatytumėte kanalą, kuriame Modify siųs pranešimus apie žinutes, pažymėtas kaip turinčias neapykantą, grasinimus, priekabiavimą, savižudybę, seksualinį turinį ar smurtą.\n\n**Kaip Nustatyti Savo Log Kanalą:**\n1. Sukurkite naują kanalą (arba pasirinkite esamą) Modify pranešimams.\n2. Įsitikinkite, kad Modify turi leidimą siųsti žinutes ten.\n3. Įveskite `/log_channel` nurodytame kanale, kad nustatytumėte jį kaip savo log kanalą.\n\n✨ Tai viskas! Modify dabar siųs pranešimus į jūsų log kanalą, jei žinutė bus pažymėta. Nepamirškite, kad jums reikia 'valdyti serverį' leidimų, kad nustatytumėte log kanalą.\n\n🚀 *Būsimi Planai:*\n- Pasirinktų slenkstinių lygių nustatymas turinio kategorijoms.\n- Pritaikyti politikos sprendimai skirtingiems kanalams ir vaidmenims.\n- Bausmės politikos už pakartotinus pažeidimus.\n\nSekite naujienas!\n\nReikia daugiau pagalbos? **Ačiū, kad naudojatės Modify! Sukurkime saugią bendruomenę kartu.**\n\n🧹 **Komanda: /purge**\nNaudokite šią komandą, kad masiškai ištrintumėte žinutes kanale. Galite nurodyti žinučių skaičių, kurį norite ištrinti (1-100), filtruoti pagal turinį, vartotoją, žinutes iš programų arba žinutes, turinčias įdėtus elementus.\n\n**Kaip Naudoti /purge:**\n- `/purge amount:<number>` — Ištrinkite iki 100 neseniai gautų žinučių.\n- Pasirinktinai: pridėkite filtrus, tokius kaip `contains:<text>`, `user:<user>`, `apps:true` arba `embeds:true`, kad tiksliai nustatytumėte žinutes.\n- Jums reikia 'valdyti žinutes' leidimo, kad naudotumėte šią komandą.\n",
+    "log_channel_confirm": "Log kanalas nustatytas į",
+    "log_channel_admin_only": "Atsiprašome, bet ši komanda skirta tik administratoriams.",
+    "log_channel_error": "Atsiprašome, bet kažkas nepavyko mūsų pusėje. Prašome bandyti vėliau.",
+    "categories": {
+        "sexual": "Seksualinis",
+        "sexual/minors": "Seksualinis/Nepriklausomi",
+        "harassment": "Priekabiavimas",
+        "harassment/threatening": "Priekabiavimas/Grasinantis",
+        "hate": "Neapykanta",
+        "hate/threatening": "Neapykanta/Grasinantis",
+        "illicit": "Netikras",
+        "illicit/violent": "Netikras/Smurtinis",
+        "self-harm": "Savižudybė",
+        "self-harm/intent": "Savižudybė/Intencija",
+        "self-harm/instructions": "Savižudybė/Nurodymai",
+        "violence": "Smurtas",
+        "violence/graphic": "Smurtas/Grafinis"
+    },
+    "purge_app_permission_missing": "Programai trūksta valdyti žinutes leidimo.",
+    "purge_user_permission_missing": "Vartotojui trūksta valdyti žinutes leidimo.",
+    "purge_invalid_amount": "Neteisingas ištrynimo kiekis. Turi būti tarp 1 ir 100.",
+    "purge_no_messages": "Nėra žinučių, kurias būtų galima ištrinti.",
+    "purge_success": "Ištrintos žinutės: ",
+    "evaluate_error": "Nėra žinučių ar vaizdų, kuriuos būtų galima įvertinti."
 }

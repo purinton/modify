@@ -1,3 +1,27 @@
 {
-    "help": "Tämä on ohjeteksti."
+    "help": "🤖 **Muokkaa Apua**\n\nMuokkaa on täällä pitämässä Discord-palvelimesi turvallisena! Tässä on, miten pääset alkuun:\n\n🔗 **Tukipalvelin:** [Liity Muokkaa Tukipalvelimeen](https://discord.gg/vYuTwaZ999)\n\n🔑 **Komento: /log_channel**\nKäytä tätä komentoa määrittääksesi kanavan, johon Muokkaa lähettää ilmoituksia viesteistä, jotka on merkitty sisältävän vihapuhetta, uhkauksia, häirintää, itsensä vahingoittamista, seksuaalista sisältöä tai väkivaltaa.\n\n**Logikanavan Asettaminen:**\n1. Luo uusi kanava (tai valitse olemassa oleva) Muokkaa-ilmoituksia varten.\n2. Varmista, että Muokalla on lupa lähettää viestejä sinne.\n3. Syötä `/log_channel` määritelläksesi sen logikanavaksi.\n\n✨ Siinä se! Muokkaa lähettää nyt ilmoituksia logikanavallesi, jos viesti merkitään. Muista, että tarvitset 'hallinnoi palvelinta' -oikeudet asettaaksesi logikanavan.\n\n🚀 *Tulevat Suunnitelmat:*\n- Mukautetut kynnystasot sisältöluokille.\n- Räätälöidyt käytännöt eri kanaville ja rooleille.\n- Rangaistuspolitiikat toistuvista rikkomuksista.\n\nPysy kuulolla päivityksille!\n\nTarvitsetko lisää apua? **Kiitos, että käytät Muokkaa! Luodaan yhdessä turvallinen yhteisö.**\n\n🧹 **Komento: /purge**\nKäytä tätä komentoa poistaaksesi viestejä massana kanavalla. Voit määrittää poistettavien viestien määrän (1-100), suodattaa sisällön, käyttäjän, sovelluksista tulevat viestit tai viestit, jotka sisältävät upotuksia.\n\n**Kuinka Käyttää /purge:**\n- `/purge amount:<number>` — Poista jopa 100 viimeisintä viestiä.\n- Valinnainen: Lisää suodattimia kuten `contains:<text>`, `user:<user>`, `apps:true` tai `embeds:true` kohdistamaan tiettyihin viesteihin.\n- Tarvitset 'hallinnoi viestejä' -oikeudet käyttääksesi tätä komentoa.\n",
+    "log_channel_confirm": "Logikanava asetettu",
+    "log_channel_admin_only": "Anteeksi, mutta tämä komento on vain ylläpitäjille.",
+    "log_channel_error": "Anteeksi, mutta jotain meni pieleen meidän päässä. Yritä uudelleen myöhemmin.",
+    "categories": {
+        "sexual": "Seksuaalinen",
+        "sexual/minors": "Seksuaalinen/Alkuperäiset",
+        "harassment": "Häirintä",
+        "harassment/threatening": "Häirintä/Uhkava",
+        "hate": "Vihapuhe",
+        "hate/threatening": "Vihapuhe/Uhkava",
+        "illicit": "Laiton",
+        "illicit/violent": "Laiton/Väkivaltainen",
+        "self-harm": "Itsensä vahingoittaminen",
+        "self-harm/intent": "Itsensä vahingoittaminen/Aikomus",
+        "self-harm/instructions": "Itsensä vahingoittaminen/Ohjeet",
+        "violence": "Väkivalta",
+        "violence/graphic": "Väkivalta/Graafinen"
+    },
+    "purge_app_permission_missing": "Sovellukselta puuttuu hallinnoi viestejä -oikeus.",
+    "purge_user_permission_missing": "Käyttäjältä puuttuu hallinnoi viestejä -oikeus.",
+    "purge_invalid_amount": "Virheellinen puhdistusmäärä. Sen on oltava välillä 1-100.",
+    "purge_no_messages": "Ei viestejä poistettavaksi.",
+    "purge_success": "Poistetut viestit: ",
+    "evaluate_error": "Ei viestejä tai kuvia arvioitavaksi."
 }

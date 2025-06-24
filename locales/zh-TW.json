@@ -1,3 +1,27 @@
 {
-    "help": "這是幫助文本。"
+    "help": "🤖 **修改幫助指南**\n\n修改旨在保護您的 Discord 伺服器安全！以下是開始的步驟：\n\n🔗 **支援伺服器：** [加入修改支援伺服器](https://discord.gg/vYuTwaZ999)\n\n🔑 **指令：/log_channel**\n使用此指令指定一個頻道，修改將在該頻道發送有關包含仇恨言論、威脅、騷擾、自殘、性內容或暴力的消息的警報。\n\n**設置您的日誌頻道：**\n1. 創建一個新的頻道（或選擇一個現有的頻道）用於修改警報。\n2. 確保修改有權限在那裡發送消息。\n3. 在指定的頻道中輸入 `/log_channel` 以將其設置為您的日誌頻道。\n\n✨ 就這樣！修改現在將在消息被標記時向您的日誌頻道發送通知。請記住，您需要擁有“管理伺服器”權限才能設置日誌頻道。\n\n🚀 *未來計劃：*\n- 內容類別的自定義閾值。\n- 不同頻道和角色的量身定制政策。\n- 對重複違規的懲罰政策。\n\n敬請期待更新！\n\n需要更多幫助嗎？ **感謝您使用修改！讓我們一起創建一個安全的社區。**\n\n🧹 **指令：/purge**\n使用此指令批量刪除頻道中的消息。您可以指定要刪除的消息數量（1-100），按內容、用戶、應用程序中的消息或包含嵌入的消息進行過濾。\n\n**如何使用 /purge：**\n- `/purge amount:<number>` — 刪除最多 100 條最近的消息。\n- 可選：添加過濾器，如 `contains:<text>`、`user:<user>`、`apps:true` 或 `embeds:true` 以針對特定消息。\n- 您需要“管理消息”權限才能使用此指令。\n",
+    "log_channel_confirm": "日誌頻道設置為",
+    "log_channel_admin_only": "抱歉，此指令僅限管理員使用。",
+    "log_channel_error": "抱歉，我們這邊出現了問題。請稍後再試。",
+    "categories": {
+        "sexual": "性",
+        "sexual/minors": "性/未成年人",
+        "harassment": "騷擾",
+        "harassment/threatening": "騷擾/威脅",
+        "hate": "仇恨",
+        "hate/threatening": "仇恨/威脅",
+        "illicit": "非法",
+        "illicit/violent": "非法/暴力",
+        "self-harm": "自殘",
+        "self-harm/intent": "自殘/意圖",
+        "self-harm/instructions": "自殘/指導",
+        "violence": "暴力",
+        "violence/graphic": "暴力/圖像"
+    },
+    "purge_app_permission_missing": "應用程序缺少管理消息的權限。",
+    "purge_user_permission_missing": "用戶缺少管理消息的權限。",
+    "purge_invalid_amount": "無效的清除數量。必須在 1 到 100 之間。",
+    "purge_no_messages": "沒有消息可刪除。",
+    "purge_success": "已清除消息：",
+    "evaluate_error": "沒有消息或圖片可供評估。"
 }

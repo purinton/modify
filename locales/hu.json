@@ -1,3 +1,27 @@
 {
-    "help": "Ez a súgószöveg."
+    "help": "🤖 **Módosítási Segítség**\n\nA Módosítás azért van, hogy biztonságban tartsa a Discord szerveredet! Íme, hogyan kezdj hozzá:\n\n🔗 **Támogató Szerver:** [Csatlakozz a Módosítás Támogató Szerveréhez](https://discord.gg/vYuTwaZ999)\n\n🔑 **Parancs: /log_channel**\nHasználj ezt a parancsot, hogy kijelölj egy csatornát, ahová a Módosítás értesítéseket küld a gyűlöletbeszédet, fenyegetéseket, zaklatást, öngyilkosságot, szexuális tartalmat vagy erőszakot tartalmazó üzenetekről.\n\n**A Log Csatorna Beállítása:**\n1. Hozz létre egy új csatornát (vagy válassz egy meglévőt) a Módosítás értesítéseihez.\n2. Győződj meg róla, hogy a Módosításnak van engedélye üzenetek küldésére ott.\n3. Írd be a ` /log_channel ` parancsot a kijelölt csatornába, hogy beállítsd log csatornaként.\n\n✨ Ennyi! A Módosítás mostantól értesítéseket küld a log csatornádba, ha egy üzenetet megjelölnek. Ne feledd, hogy 'szerver kezelése' engedély szükséges a log csatorna beállításához.\n\n🚀 *Jövőbeli Tervek:*\n- Testreszabható küszöbszintek a tartalom kategóriákhoz.\n- Személyre szabott irányelvek különböző csatornákhoz és szerepekhez.\n- Büntetési irányelvek ismételt megsértések esetén.\n\nMaradj velünk a frissítésekért!\n\nTovábbi segítségre van szükséged? **Köszönjük, hogy a Módosítást használod! Hozzunk létre együtt egy biztonságos közösséget.**\n\n🧹 **Parancs: /purge**\nHasználj ezt a parancsot üzenetek tömeges törlésére egy csatornában. Megadhatod a törlendő üzenetek számát (1-100), szűrhetsz tartalom, felhasználó, alkalmazások üzenetei vagy beágyazott üzenetek alapján.\n\n**Hogyan Használjuk a /purge Parancsot:**\n- `/purge amount:<number>` — Törölj legfeljebb 100 legutóbbi üzenetet.\n- Opcionálisan: Adj hozzá szűrőket, mint `contains:<text>`, `user:<user>`, `apps:true` vagy `embeds:true`, hogy célzott üzeneteket célozz meg.\n- 'Üzenetek kezelése' engedély szükséges a parancs használatához.\n",
+    "log_channel_confirm": "Log csatorna beállítva erre:",
+    "log_channel_admin_only": "Sajnálom, de ez a parancs csak adminisztrátorok számára elérhető.",
+    "log_channel_error": "Sajnálom, de valami hiba történt a mi oldalunkon. Kérlek, próbáld újra később.",
+    "categories": {
+        "sexual": "Szexuális",
+        "sexual/minors": "Szexuális/Kiskorúak",
+        "harassment": "Zaklatás",
+        "harassment/threatening": "Zaklatás/Fenyegetés",
+        "hate": "Gyűlölet",
+        "hate/threatening": "Gyűlölet/Fenyegetés",
+        "illicit": "Illegális",
+        "illicit/violent": "Illegális/Erőszakos",
+        "self-harm": "Öngyilkosság",
+        "self-harm/intent": "Öngyilkosság/Szándék",
+        "self-harm/instructions": "Öngyilkosság/Utasítások",
+        "violence": "Erőszak",
+        "violence/graphic": "Erőszak/Grafikus"
+    },
+    "purge_app_permission_missing": "Az alkalmazásnak hiányzik az üzenetek kezelése engedély.",
+    "purge_user_permission_missing": "A felhasználónak hiányzik az üzenetek kezelése engedély.",
+    "purge_invalid_amount": "Érvénytelen törlési mennyiség. 1 és 100 között kell lennie.",
+    "purge_no_messages": "Nincsenek törlendő üzenetek.",
+    "purge_success": "Törölt üzenetek: ",
+    "evaluate_error": "Nincsenek üzenetek vagy képek, amelyeket értékelni lehetne."
 }

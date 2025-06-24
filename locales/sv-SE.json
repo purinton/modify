@@ -1,3 +1,27 @@
 {
-    "help": "Detta är hjälpinformationen."
+    "help": "🤖 **Modifiera Hjälpguide**\n\nModifiera är här för att hålla din Discord-server säker! Här är hur du kommer igång:\n\n🔗 **Supportserver:** [Gå med i Modifiera Supportserver](https://discord.gg/vYuTwaZ999)\n\n🔑 **Kommando: /log_channel**\nAnvänd detta kommando för att ange en kanal där Modifiera kommer att skicka aviseringar för meddelanden som flaggats för att innehålla hatprat, hot, trakasserier, självskada, sexuellt innehåll eller våld.\n\n**Ställa in din loggkanal:**\n1. Skapa en ny kanal (eller välj en befintlig) för Modifiera-aviseringar.\n2. Se till att Modifiera har behörighet att skicka meddelanden där.\n3. Skriv ` /log_channel ` i den angivna kanalen för att ställa in den som din loggkanal.\n\n✨ Det är allt! Modifiera kommer nu att skicka aviseringar till din loggkanal om ett meddelande flaggas. Kom ihåg, du behöver 'hantera server' behörigheter för att ställa in loggkanalen.\n\n🚀 *Framtida planer:*\n- Anpassade tröskelnivåer för innehållskategorier.\n- Skräddarsydda policyer för olika kanaler och roller.\n- Bestraffningspolicyer för upprepade överträdelser.\n\nHåll utkik efter uppdateringar!\n\nBehöver du mer hjälp? **Tack för att du använder Modifiera! Låt oss skapa en säker gemenskap tillsammans.**\n\n🧹 **Kommando: /purge**\nAnvänd detta kommando för att ta bort meddelanden i bulk i en kanal. Du kan specificera antalet meddelanden som ska tas bort (1-100), filtrera efter innehåll, användare, meddelanden från appar eller meddelanden som innehåller inbäddningar.\n\n**Hur man använder /purge:**\n- `/purge amount:<number>` — Ta bort upp till 100 senaste meddelanden.\n- Valfritt: Lägg till filter som `contains:<text>`, `user:<user>`, `apps:true` eller `embeds:true` för att rikta in dig på specifika meddelanden.\n- Du behöver 'hantera meddelanden' behörighet för att använda detta kommando.\n",
+    "log_channel_confirm": "Loggkanal inställd på",
+    "log_channel_admin_only": "Jag är ledsen, men detta kommando är endast för administratörer.",
+    "log_channel_error": "Jag är ledsen, men något gick fel på vår sida. Vänligen försök igen senare.",
+    "categories": {
+        "sexual": "Sexuellt",
+        "sexual/minors": "Sexuellt/Minorer",
+        "harassment": "Trakasserier",
+        "harassment/threatening": "Trakasserier/Hotande",
+        "hate": "Hate",
+        "hate/threatening": "Hat/Hotande",
+        "illicit": "Olagligt",
+        "illicit/violent": "Olagligt/Våldsamt",
+        "self-harm": "Självskada",
+        "self-harm/intent": "Självskada/Avsikt",
+        "self-harm/instructions": "Självskada/Instruktioner",
+        "violence": "Våld",
+        "violence/graphic": "Våld/Grafiskt"
+    },
+    "purge_app_permission_missing": "Appen saknar behörighet att hantera meddelanden.",
+    "purge_user_permission_missing": "Användaren saknar behörighet att hantera meddelanden.",
+    "purge_invalid_amount": "Ogiltigt rensningsbelopp. Måste vara mellan 1 och 100.",
+    "purge_no_messages": "Inga meddelanden att ta bort.",
+    "purge_success": "Rensade meddelanden: ",
+    "evaluate_error": "Inga meddelanden eller bilder att utvärdera."
 }
