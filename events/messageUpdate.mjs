@@ -5,5 +5,5 @@ export default async function ({ client, log, msg, openai, logChannels, guildLoc
     moderateMessageFn = moderateMessage
 } = {}) {
     log.debug('messageUpdate', { oldMessage, newMessage });
-    await handleMessageCreate({ log, msg, openai, logChannels, guildLocales }, newMessage, { moderateMessageFn });
+    await handleMessageCreate({ client, log, msg, openai, logChannels, guildLocales }, newMessage, { moderateMessageFn });
 }
