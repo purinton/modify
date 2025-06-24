@@ -1,7 +1,7 @@
 {
     "name": "@purinton/modify",
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A modern, modular Discord moderation and utility bot with OpenAI-powered content moderation, multi-language support, and easy customization.",
     "main": "modify.mjs",
     "scripts": {
