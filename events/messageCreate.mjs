@@ -1,7 +1,7 @@
 // events/messageCreate.mjs
 import { EmbedBuilder } from 'discord.js';
 import { moderateMessage } from '../src/moderate.mjs';
-export default async function ({ log, msg, openai, logChannels, guildLocales }, message, {
+export default async function ({ client, log, msg, openai, logChannels, guildLocales }, message, {
     moderateMessageFn = moderateMessage
 } = {}) {
     log.debug('messageCreate', { id: message.id });
