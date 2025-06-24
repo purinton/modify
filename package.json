@@ -36,6 +36,7 @@
     "dependencies": {
         "@purinton/common": "^1.0.16",
         "@purinton/discord": "^1.0.11",
+        "@purinton/openai": "^1.0.1",
         "dotenv": "^16.5.0"
     }
 }

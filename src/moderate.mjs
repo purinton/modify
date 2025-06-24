@@ -1,6 +1,5 @@
-export async function moderateMessageContent(text, imageUrls = [], injectedLog = log, injectedOpenai = openai) {
-    injectedLog.debug("Moderating message content:", { text, imageUrls });
-    // Only allow 1 text and 1 image per request as per OpenAI Moderation API
+export async function moderateMessage({ text = null, imageUrls = [], log, openai }) {
+    log.debug("Moderating message content:", { text, imageUrls });
     const input = [];
     if (text && text.trim().length > 0) {
         input.push({ type: "text", text });
@@ -10,12 +9,12 @@ export async function moderateMessageContent(text, imageUrls = [], injectedLog =
     }
     if (input.length === 0) return null;
     try {
-        return await injectedOpenai.moderations.create({
+        return await openai.moderations.create({
             model: "omni-moderation-latest",
             input
         });
     } catch (error) {
-        injectedLog.error("Moderation API error:", error);
+        log.error("Moderation API error:", error);
         throw error;
     }
 }
